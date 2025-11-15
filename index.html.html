@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Qalifa Travel & Tours</title>
+  <style>
+    /* Gaya Umum */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      background: linear-gradient(135deg, #0d3b66, #1a568c);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header img {
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      margin-top: 10px;
+      display: none; /* Sembunyikan teks jika logo digunakan */
+    }
+    nav {
+      background: #f1c40f;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: #0d3b66;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 0;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #0d3b66;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .service-card {
+      background: white;
+      padding: 20px;
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #0d3b66;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover {
+      background: #1a568c;
+    }
+    .contact-info {
+      text-align: center;
+      margin-top: 30px;
+    }
+    footer {
+      background: #0d3b66;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Responsif */
+    @media (max-width: 768px) {
+      header img {
+        max-width: 200px;
+      }
+      .service-card {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <!-- Gantikan URL logo dengan fail sebenar nanti -->
+    <img src="https://via.placeholder.com/300x100?text=LOGO+QALIFA" alt="Logo Qalifa Travel & Tours" />
+    <h1>QALIFA TRAVEL & TOURS SDN. BHD.</h1>
+  </div>
+</header>
+
+<nav>
+  <a href="#perkhidmatan">Perkhidmatan</a>
+  <a href="#tentang">Tentang Kami</a>
+  <a href="#hubungi">Hubungi Kami</a>
+</nav>
+
+<main class="container">
+
+  <section id="perkhidmatan">
+    <h2>Perkhidmatan Kami</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Umrah</h3>
+        <p>Pakej umrah sepanjang tahun dengan pilihan hotel terbaik di Mekah & Madinah.</p>
+      </div>
+      <div class="service-card">
+        <h3>Haji</h3>
+        <p>Pengurusan haji yang komprehensif dan bimbingan rohani oleh pakar.</p>
+      </div>
+      <div class="service-card">
+        <h3>Ziarah Islamiah</h3>
+        <p>Jelajahi tempat suci di Timur Tengah, Turki, Jordan & Mesir.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+      Qalifa Travel & Tours Sdn. Bhd. komited untuk menyediakan perkhidmatan perjalanan suci 
+      yang selamat, selesa, dan penuh makna. Dengan pasukan profesional dan pengalaman bertahun-tahun, 
+      kami menjadi rakan perjalanan kepercayaan umat Islam di Malaysia.
+    </p>
+  </section>
+
+  <section id="hubungi">
+    <h2>Hubungi Kami</h2>
+    <form action="https://formspree.io/f/xbjvkzql" method="POST">
+      <input type="text" name="name" placeholder="Nama Penuh" required />
+      <input type="email" name="email" placeholder="Emel Anda" required />
+      <textarea name="message" rows="5" placeholder="Mesej Anda" required></textarea>
+      <button type="submit">Hantar Mesej</button>
+    </form>
+
+    <div class="contact-info">
+      <p>📧 <a href="mailto:kas2020@gmail.com">kas2020@gmail.com</a></p>
+      <p>📞 +603-XXXX XXXX</p>
+      <p>🏢 Kuala Lumpur, Malaysia</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Qalifa Travel & Tours Sdn. Bhd. Hak Cipta Terpelihara.</p>
+  </div>
+</footer>
+
+</body>
+</html>
